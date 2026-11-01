@@ -1,0 +1,218 @@
+
+--1. Basics of Digital Systems
+Digital systems process information using binary values, 0 and 1. They use logic gates,
+memory, and a clock. Examples are computers, phones, and digital controllers.
+--2. Digital systems based on computer engineering complexes
+These systems combine hardware and software. The hardware includes a processor,
+memory, input/output devices, and buses. Software controls the hardware and processes
+data.
+--3. Digital system and its fundamental principles of operation
+A digital system receives input data, processes it with logic or a program, stores data if
+needed, and produces an output. It represents information with discrete values, usually 0
+and 1.
+--4. Signal reconstruction from discrete samples
+Signal reconstruction means creating a continuous signal from its samples. If the signal is
+sampled fast enough, a reconstruction filter can recover it accurately.
+--5. Data conversion and quantization
+Data conversion changes data from one form to another, such as analog to digital.
+Quantization assigns each sample to the nearest value from a limited set of levels.
+--6. Sample-and-hold circuits
+A sample-and-hold circuit takes the input voltage at a certain time and holds it constant
+for a short time. It helps an ADC measure a stable signal.
+Digital Systems Midterm — English Answers (1–60)
+--7. Digital-to-analog conversion
+A DAC converts a digital number into an analog voltage or current. The output changes
+according to the digital input. It is used in audio and control systems.
+--8. Analog-to-digital conversion
+An ADC converts an analog signal into digital numbers. The main steps are sampling,
+quantization, and binary encoding.
+--9. Discretization of continuous-time processes
+Discretization represents a continuous-time signal by taking samples at regular time
+intervals. The sampling period is T = 1/fs.
+--10. Reconstruction of continuous functions
+A continuous function can be reconstructed from samples when the sampling theorem is
+satisfied. An ideal low-pass filter can recover a band-limited signal.
+--11. Fourier transform
+The Fourier transform shows the frequency components of a signal. It changes a signal
+from the time domain to the frequency domain.
+--12. Modified Z-transform
+The modified Z-transform is used for sampled-data systems with sampling or delay
+effects. It helps analyze digital control systems and their responses.
+--13. Analog model of the extrapolator
+An extrapolator estimates the signal between samples using past samples. A zero-order
+hold keeps each sample constant until the next sample; a first-order hold uses a straight
+line.
+--14. Stable and unstable systems
+A stable system gives a bounded output for every bounded input. An unstable system
+may give an output that grows without limit. For a discrete-time system, poles must be
+inside the unit circle for BIBO stability in common rational systems.
+--15. Design of digital filters and BIBO stability
+A digital filter removes or changes selected frequency components. BIBO stability means
+every bounded input gives a bounded output. For a causal IIR filter, all poles must be
+inside the unit circle.
+--16. Routh–Hurwitz criterion for stability
+The Routh–Hurwitz criterion checks the stability of a continuous-time system from its
+characteristic polynomial. The system is stable if all entries in the first column of the
+Routh table have the same sign and no special-case issue occurs.
+--17. Sampling, quantization, and convolution
+Sampling takes values at separate times. Quantization rounds each sample to one of a
+finite number of levels. Convolution combines an input signal with a system's impulse
+response to find the output.
+--18. Nyquist criterion for stability
+The Nyquist criterion uses the open-loop frequency response to determine closed-loop
+stability. It studies how the Nyquist plot surrounds the point -1 + j0, together with the
+number of open-loop unstable poles.
+--19. Digital controller and D/A conversion
+A digital controller reads sampled data, calculates a control value, and sends it to the
+plant. A DAC converts the digital control value into an analog signal for the physical
+system.
+--20. IIR realization: direct, parallel, and cascaded
+Direct form implements the transfer function using delays, multipliers, and adders.
+Parallel form splits it into simpler sections added together. Cascaded form connects
+sections one after another.
+--21. Transfer functions
+A transfer function is the ratio of the output Z-transform to the input Z-transform when
+initial conditions are zero. It describes the input-output behavior of a system.
+--22. Modulation and demodulation
+Modulation changes a carrier signal according to the message signal. Demodulation
+recovers the message from the modulated signal. These processes are used in
+communication systems.
+--23. Coefficient quantization effects in digital filters
+Coefficient quantization stores filter coefficients with limited precision. It can change the
+frequency response, move poles, increase error, and sometimes make a filter unstable.
+--24. Digital Signal Processing System
+A DSP system converts real-world signals into digital data, processes them, and may
+convert them back to analog form. Common blocks are an ADC, processor, memory, and
+DAC.
+--25. Quadrature modulation and deviation
+Quadrature modulation uses two carrier signals that are 90 degrees apart. The two signals
+can carry separate data at the same time. In FM, frequency deviation is the maximum
+change from the carrier frequency.
+--26. Spectral characteristics
+Spectral characteristics show how signal power or amplitude is distributed over
+frequency. They help identify bandwidth, noise, and important frequency components.
+--27. Modulation and demodulation
+Modulation puts information onto a carrier for transmission. Demodulation extracts the
+original information at the receiver.
+--28. Discrete-time systems
+A discrete-time system works with samples defined at separate time points. Its input and
+output are sequences, such as x[n] and y[n].
+--29. IIR filter design using the bilinear Z-transform
+The bilinear transform maps an analog filter into a digital filter using z = (1 + sT/2)/(1 
+sT/2). It maps the stable left half-plane inside the unit circle, but it causes frequency
+warping.
+--30. FIR and IIR filters
+An FIR filter has a finite impulse response and usually no feedback. An IIR filter has an
+infinite impulse response and usually uses feedback. FIR filters can have exact linear
+phase.
+--31. Recursive smoother
+A recursive smoother reduces rapid changes and noise by using the current input and a
+previous output. A simple form is y[n] = a x[n] + (1-a)y[n-1], where 0<a<1.
+--32. Group delay, linear phase, all-pass, minimum phase
+Group delay is the delay of signal components at different frequencies. A linear-phase
+filter delays all frequencies equally. An all-pass filter changes phase but keeps magnitude.
+A minimum-phase filter has its zeros inside the unit circle and the smallest delay for its
+magnitude response.
+--33. Analog-to-digital conversion
+ADC changes a continuous analog signal into digital values. It samples the signal,
+quantizes the samples, and encodes them as binary numbers.
+--34. Fundamental definition of system stability
+A system is stable if a bounded input produces a bounded output. This is called BIBO
+stability. In an unstable system, the output may grow without limit.
+--35. Sampling and quantization
+Sampling measures a signal at regular time intervals. Quantization maps each measured
+value to one of a finite set of levels. Both are important in digital conversion.
+--36. Aliasing and anti-aliasing
+Aliasing happens when the sampling frequency is too low, so high frequencies appear as
+lower frequencies. An anti-aliasing low-pass filter removes high frequencies before
+sampling.
+--37. Nyquist–Shannon sampling theorem
+The theorem says that the sampling frequency must be greater than twice the highest
+signal frequency for accurate reconstruction. Thus, fs>2fmax in practical use.
+--38. Correlation analysis
+Correlation measures how similar two signals are and how one signal changes with
+another. Autocorrelation compares a signal with a delayed version of itself; cross
+correlation compares two signals.
+--39. Equalization filters
+An equalization filter compensates for unwanted changes caused by a channel or system.
+It can make the output closer to the original signal.
+--40. Frequency response and transfer function
+The transfer function describes a system in the transform domain. The frequency
+response is found by evaluating it on the unit circle, usually at z = exp(jω). It shows gain
+and phase versus frequency.
+--41. Quantization error
+Quantization error is the difference between the original sample and its quantized value.
+For rounding quantization, the error is often between -Δ/2 and +Δ/2, where Δ is the step
+size.
+--42. All-pass filters
+An all-pass filter has a constant magnitude response at all frequencies, but it changes
+phase. It is used to adjust phase or group delay.
+--43. Fourier transform and digital Fourier transform
+The Fourier transform represents a signal by its frequency components. The discrete
+Fourier transform (DFT) does this for a finite sequence of samples and is often calculated
+with the FFT algorithm.
+--44. First-order notch filter
+A notch filter removes a narrow range of frequencies. A first-order notch filter is a simple
+filter used to reduce an unwanted frequency, although a second-order design is more
+common for a sharp notch.
+--45. Second-order unity-gain resonator
+A second-order resonator gives a strong response near a selected frequency. Unity gain
+means the gain is 1 at the specified reference or center frequency, according to the
+design.
+--46. State space
+State-space modeling describes a system using state variables. A common form is x[k+1]
+= Ax[k] + Bu[k] and y[k] = Cx[k] + Du[k].
+--47. Transformation of random signals in discrete-time systems
+A discrete-time system changes the statistical properties of a random input signal. For a
+linear time-invariant system, the output mean and power spectrum depend on the input
+and the system response.
+--48. High-pass filters
+A high-pass filter passes high frequencies and reduces low frequencies. It is used to
+remove slow changes or low-frequency noise.
+--49. Low-pass filters
+A low-pass filter passes low frequencies and reduces high frequencies. It is used to
+smooth signals and remove high-frequency noise.
+--50. Band-pass filters
+A band-pass filter passes frequencies within a selected band and reduces frequencies
+below and above that band. It is used to select a useful frequency range.
+--51. Relationship between sampling frequency and maximum
+signal frequency
+According to the sampling theorem, the sampling frequency must be at least twice the
+maximum frequency: fs ≥ 2fmax. In practice, fs is chosen higher than 2fmax to allow a
+safety margin and filter transition band.
+--52. Nyquist frequency, aliasing, and reconstruction
+The Nyquist frequency is half the sampling frequency: fN = fs/2. Aliasing occurs when the
+signal has frequencies above this limit. Reconstruction uses a suitable filter to recover
+the original band-limited signal.
+--53. Signal up to 8 kHz; sampling at 12 kHz
+The highest frequency is 8 kHz, so the theoretical minimum sampling frequency is 16 kHz.
+Sampling at 12 kHz is too low because its Nyquist frequency is 6 kHz. Aliasing may occur,
+so accurate reconstruction is not possible.
+--54. Fundamental principles of digital system analysis
+Digital system analysis studies input, output, and internal behavior. Important tools
+include difference equations, the Z-transform, transfer functions, poles, zeros, frequency
+response, and stability tests.
+--55. Role of the Z-transform
+The Z-transform changes a discrete-time sequence into a function of z. It makes
+difference equations easier to solve and helps find transfer functions, poles, zeros, and
+stability.
+--56. Linearity, time invariance, causality, and stability
+Linearity means the system obeys superposition. Time invariance means a time shift in
+the input causes the same shift in the output. Causality means the output depends only
+on present and past inputs. Stability means bounded input gives bounded output.
+--57. Effect of poles and zeros
+Poles strongly affect stability and the natural response. Zeros reduce or cancel the
+response at some frequencies. Pole locations affect resonance and decay, while zeros
+shape the frequency response.
+--58. Transfer function of a discrete-time system
+The transfer function is H(z) = Y(z)/X(z), assuming zero initial conditions. It describes how
+the system changes the input sequence into the output sequence.
+--59. Obtaining transfer function from a difference equation
+Take the Z-transform of both sides of the difference equation and assume zero initial
+conditions. Then collect the Y(z) terms and X(z) terms, and divide to get H(z) = Y(z)/X(z).
+--60. Relationship between transfer function, poles, zeros, stability,
+and frequency response
+The transfer function contains poles and zeros. Poles determine stability and natural
+response; zeros shape the response. The frequency response is H(z) evaluated on the
+unit circle. For a causal rational digital system, poles inside the unit circle indicate stability.
+Page 9 of 9
